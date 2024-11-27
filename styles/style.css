@@ -110,6 +110,15 @@ section{
 .about img{
     width: 30vw;
     border-radius: 50%;
+    box-shadow: 0 0 15px rgb(0,157,255);
+    transition: 0.4s ease-in-out;
+}
+
+.about img:hover{
+    box-shadow: 0 0 15px rgb(0,157,255),
+                0 0 30px rgb(0,157,255),
+                0 0 60px rgb(0,157,255);
+
 }
 
 .info-box{
@@ -297,6 +306,58 @@ section{
     font-size: 2rem;
     font-weight: 500;
 }
+
+.slider-container {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+    transition-duration: 0.5s;
+}
+
+.slider-container:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.slider-container:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.slider-container .slide-track {
+    display: flex;
+    animation: scroll 35s linear infinite;
+    -webkit-animation: scroll 35s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider-container:hover .slide-track {
+  animation-play-state: paused;
+}
+
+.slide-img img {
+    height: 80px;
+
+
+}
+
+.slide-img {
+    margin: 0 40px;
+  }
+  
+  @keyframes scroll {
+      0% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+      }
+      100% {
+          -webkit-transform: translateX(calc(-160px * 7));
+          transform: translateX(calc(-160px * 7));
+      }
+  }
+  
 
 .input-box{
     display: flex;
