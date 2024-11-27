@@ -482,12 +482,16 @@ footer ul li a{
 
     .input-box input{
         padding: 0.5rem 3rem;
-        width: 80%;
+        width: 90%;
         font-size: 1.5rem;
     }
 
     .input-box input::placeholder{
-        font-size: 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .btn-group{
+        gap: 0.5rem;
     }
 
     footer ul{
