@@ -28,7 +28,7 @@ document.getElementById('linkedin-btn').addEventListener('click', () => {
 
 document.getElementById('download-btn').addEventListener('click', () => {
     const link = document.createElement('a');
-    link.href = './assets/Resume-Cobos.pdf'; 
+    link.href = 'https://drive.google.com/file/d/1CnTOz_B72AvRk47mx5-UCLiNEJqsG0Yd/view?usp=drive_link'; 
     link.target = '_blank';
     link.click();
 });
