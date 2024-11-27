@@ -28,7 +28,7 @@ document.getElementById('linkedin-btn').addEventListener('click', () => {
 
 document.getElementById('download-btn').addEventListener('click', () => {
     const link = document.createElement('a');
-    link.href = '../assets/Resume-Cobos.pdf'; 
+    link.href = './assets/Resume-Cobos.pdf'; 
     link.target = '_blank';
     link.click();
 });
