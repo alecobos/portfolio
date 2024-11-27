@@ -5,6 +5,13 @@ menuIcon.onclick = () => {
     navLinks.classList.toggle('active');
 };
 
+document.getElementById('whatsapp-btn').addEventListener('click', () => {
+    const link = document.createElement('a');
+    link.href = 'https://api.whatsapp.com/send?phone=5493875375650'; 
+    link.target = '_blank';
+    link.click();
+});
+
 document.getElementById('git-btn').addEventListener('click', () => {
     const link = document.createElement('a');
     link.href = 'https://github.com/alecobos'; 
