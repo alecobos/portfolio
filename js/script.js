@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentLanguage = "en";
 
   const loadContent = (languaje) => {
-    fetch('../json/content.json')
+    fetch('./json/content.json')
     .then (response => response.json())
     .then (data => {
         navAbout.textContent = data[languaje].navAbout;
