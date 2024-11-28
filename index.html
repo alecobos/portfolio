@@ -14,22 +14,29 @@
 
         <ul class="nav-links">
             <li>
-                <a href="#about">About</a>
+                <a href="#about" id="navAbout">About</a>
             </li>
             <li>
-                <a href="#experience">Experience</a>
+                <a href="#experience" id="navExperience">Experience</a>
             </li>
             <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects" id="navProjects">Projects</a>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact" id="navContact">Contact</a>
             </li>
         </ul>
         <i class="fa-solid fa-bars" id="menu-icon"></i>
         
-        <button class="visit-btn">Visit Github</button>
+        <button class="visit-btn" id="visitGit">Visit Github</button>
     </header>
+
+    <div id="content">
+        <label class="switch">
+            <input type="checkbox" id="toggle-btn" class="check-language">
+            <span class="slider round"></span>
+        </label>
+    </div>
 
     <section id="about" class="about">
         <div class="about-container">
@@ -38,9 +45,9 @@
             <div class="info-box">
 
                 <div class="text">
-                    <h3>Hi, i'm</h3>
+                    <h3 id="saludo">Hi, i'm</h3>
                     <h1>Alejandro Cobos</h1>
-                    <span>Fullstack Developer</span>
+                    <span id="trabajo">Fullstack Developer</span>
                 </div>
 
                 <div class="btn-group">
@@ -52,18 +59,15 @@
                     <i class="fa-brands fa-github" id="git-btn"></i>
                     <i class="fa-brands fa-linkedin-in" id="linkedin-btn"></i>
                 </div>
-                <p>I am a passionate Full Stack Developer with expertise in building high-quality web applications using the MERN stack (MongoDB, Express, React, Node.js). Driven by a commitment to excellence, I continuously seek new challenges and opportunities to expand my technical skills and contribute to impactful projects.</p>
+                <p id="presente">I am a passionate Full Stack Developer with expertise in building high-quality web applications using the MERN stack (MongoDB, Express, React, Node.js). Driven by a commitment to excellence, I continuously seek new challenges and opportunities to expand my technical skills and contribute to impactful projects.</p>
 
             </div>
-
-
-
         </div>
     </section>
 
     <section id="experience" class="experience">
 
-        <h2 class="section-title">Experience</h2>
+        <h2 class="section-title" id="experiencia">Experience</h2>
 
         <div class="experience-info">
 
@@ -71,30 +75,30 @@
 
                 <div class="grid-card">
                     <i class="fa-regular fa-file-code"></i>
-                    <span>Frontend Development</span>
-                    <h3>1 Year</h3>
-                    <p>Proficient in web development technologies such as HTML, CSS, JavaScript, and React.js. Skilled in designing and implementing responsive, interactive, and user-focused web interfaces that enhance usability and deliver engaging experiences.</p>
+                    <span id="frontend">Frontend Development</span>
+                    <h3 id="experienciaFrontA">1 Year</h3>
+                    <p id="experienciaFrontD">Proficient in web development technologies such as HTML, CSS, JavaScript, and React.js. Skilled in designing and implementing responsive, interactive, and user-focused web interfaces that enhance usability and deliver engaging experiences.</p>
                 </div>
 
                 <div class="grid-card">
                     <i class="fa-solid fa-code"></i>
-                    <span>Backend Development</span>
-                    <h3>3 Months</h3>
-                    <p>Proficient in developing server-side applications using Node.js, Express, and REST APIs. Experienced in implementing middleware, WebSocket communication for real-time features, and database management with Mongoose. Skilled in building scalable and efficient back-end architectures.</p>
+                    <span id="backend">Backend Development</span>
+                    <h3 id="experienciaBackA">3 Months</h3>
+                    <p id="experienciaBackD">Proficient in developing server-side applications using Node.js, Express, and REST APIs. Experienced in implementing middleware, WebSocket communication for real-time features, and database management with Mongoose. Skilled in building scalable and efficient back-end architectures.</p>
                 </div>
 
                 <div class="grid-card">
                     <i class="fa-solid fa-database"></i>
-                    <span>Database Administrator</span>
-                    <h3>1 Year</h3>
-                    <p>Experienced in managing and optimizing databases using MySQL, PostgreSQL, SQL Express, MongoDB, and Firebase. Skilled in designing, maintaining, and securing databases to ensure data integrity and optimal performance across diverse systems.</p>
+                    <span id="database">Database Administrator</span>
+                    <h3 id="experienciaDataA">1 Year</h3>
+                    <p id="experienciaDataD">Experienced in managing and optimizing databases using MySQL, PostgreSQL, SQL Express, MongoDB, and Firebase. Skilled in designing, maintaining, and securing databases to ensure data integrity and optimal performance across diverse systems.</p>
                 </div>
                 
                 <div class="grid-card">
                     <i class="fa-solid fa-laptop-code"></i> 
-                    <span>Odoo ERP Implementation</span>
-                    <h3>6 Months</h3>
-                    <p>Proficient in parameterizing and customizing Odoo ERP to meet business needs. Experienced in developing new functionalities, optimizing workflows, and providing comprehensive staff training to ensure successful adoption and usage.</p>
+                    <span id="odoo">Odoo ERP Implementation</span>
+                    <h3 id="experienciaOdooA">6 Months</h3>
+                    <p id="experienciaOdooD">Proficient in parameterizing and customizing Odoo ERP to meet business needs. Experienced in developing new functionalities, optimizing workflows, and providing comprehensive staff training to ensure successful adoption and usage.</p>
                 </div>
 
             </div>
@@ -108,16 +112,16 @@
 
     <section id="projects" class="projects" >
 
-        <h2 class="section-title">Recent Projects</h2>
+        <h2 class="section-title" id="proyectos">Recent Projects</h2>
 
         <div class="projects-grid">
 
             <div class="projects-card">
                 <img src="./assets/tech-market.png" alt="">
                 <h3>Tech Market</h3>
-                <p>Website for a computer company using Node.js and Express, incorporating real-time features through WebSockets for seamless user interactions. Implemented middleware for enhanced request handling, authentication, and data management, ensuring a secure and efficient user experience.</p>
+                <p id="descTech">Website for a computer company using Node.js and Express, incorporating real-time features through WebSockets for seamless user interactions. Implemented middleware for enhanced request handling, authentication, and data management, ensuring a secure and efficient user experience.</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
+                    <div class="btn">Demo</div>
                     <div class="btn">Github</div>
                 </div>
                 <div class="tech-group">
@@ -132,9 +136,9 @@
             <div class="projects-card">
                 <img src="./assets/tienda-gyt.png" alt="">
                 <h3>Tienda GYT</h3>
-                <p>Responsive website for a club store in Salta, Argentina, using React.js. The site features an intuitive interface, allowing customers to easily browse and purchase products. Focused on delivering a seamless and engaging shopping experience with optimized performance for both desktop and mobile users.</p>
+                <p id="descTienda">Responsive website for a club store in Salta, Argentina, using React.js. The site features an intuitive interface, allowing customers to easily browse and purchase products. Focused on delivering a seamless and engaging shopping experience with optimized performance for both desktop and mobile users.</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
+                    <div class="btn">Demo</div>
                     <div class="btn">Github</div>
                 </div>
                 <div class="tech-group">
@@ -148,9 +152,9 @@
             <div class="projects-card">
                 <img src="./assets/triplay.png" alt="">
                 <h3>Triplay Internet</h3>
-                <p>Developed a fully responsive website for Triplay, utilizing HTML, JavaScript, and CSS to create a dynamic and user-friendly experience. Focused on ensuring seamless performance across various devices, optimizing layout and design for both desktop and mobile users to enhance accessibility and engagement.</p>
+                <p id="descTrip">Developed a fully responsive website for Triplay, utilizing HTML, JavaScript, and CSS to create a dynamic and user-friendly experience. Focused on ensuring seamless performance across various devices, optimizing layout and design for both desktop and mobile users to enhance accessibility and engagement.</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
+                    <div class="btn">Demo</div>
                     <div class="btn">Github</div>
                 </div>
                 <div class="tech-group">
@@ -216,14 +220,14 @@
     <section class="contact" id="contact">
         <div class="input-box">
 
-            <h2 class="section-title">Contact Me</h2>
+            <h2 class="section-title" id="titleContact">Contact Me</h2>
 
             <div class="input">
                 <input type="text" placeholder="alecobos@gmail.com">
                 <i class="fa-regular fa-envelope"></i>
             </div>
 
-            <div class="btn">Submit</div>
+            <div class="btn" id="btnContacto">Submit</div>
 
         </div>
 
@@ -233,16 +237,16 @@
 
         <ul>
             <li>
-                <a href="#about">About</a>
+                <a href="#about" id="footerAbout">About</a>
             </li>
             <li>
-                <a href="#experience">Experience</a>
+                <a href="#experience" id="footerExperience">Experience</a>
             </li>
             <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects" id="footerProyect">Projects</a>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact" id="footerContact">Contact</a>
             </li>
         </ul>
 
@@ -250,7 +254,7 @@
             
         </div>
 
-        <p class="copyright">© All Rights Reseerved | Alejandro Cobos</p>
+        <p class="copyright" id="copyright">© All Rights Reseerved | Alejandro Cobos</p>
 
     </footer>
 
