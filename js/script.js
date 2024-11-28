@@ -5,7 +5,7 @@ menuIcon.onclick = () => {
   navLinks.classList.toggle("active");
 };
 
-document.getElementById("whatsapp-btn").addEventListener("click", () => {
+document.getElementById("whatsappBtn").addEventListener("click", () => {
   const link = document.createElement("a");
   link.href = "https://api.whatsapp.com/send?phone=5493875375650";
   link.target = "_blank";
@@ -26,7 +26,7 @@ document.getElementById("linkedin-btn").addEventListener("click", () => {
   link.click();
 });
 
-document.getElementById("download-btn").addEventListener("click", () => {
+document.getElementById("downloadBtn").addEventListener("click", () => {
   const link = document.createElement("a");
   link.href =
     "https://drive.google.com/file/d/1CnTOz_B72AvRk47mx5-UCLiNEJqsG0Yd/view?usp=drive_link";
@@ -42,8 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const visitGitElement = document.getElementById("visitGit");
   const saludoElement = document.getElementById("saludo");
   const trabajoElement = document.getElementById("trabajo");
-  // const download-btn = document.getElementById("visitGit");
-  // const whatsapp-btn = document.getElementById("visitGit");
+  const downloadBtn = document.getElementById("downloadBtn");
+  const whatsappBtn = document.getElementById("whatsappBtn");
   const presente = document.getElementById("presente");
   const experiencia = document.getElementById("experiencia");
   const frontend = document.getElementById("frontend");
@@ -84,8 +84,8 @@ document.addEventListener("DOMContentLoaded", () => {
         visitGitElement.textContent = data[languaje].visitGit
         saludoElement.textContent = data[languaje].saludo
         trabajoElement.textContent = data[languaje].trabajo
-        // download-btn.textContent = data[languaje].visitGit
-        // whatsapp-btn.textContent = data[languaje].visitGit
+        downloadBtn.textContent = data[languaje].downloadBtn
+        whatsappBtn.textContent = data[languaje].whatsappBtn
         presente.textContent = data[languaje].presente
         experiencia.textContent = data[languaje].experiencia
         frontend.textContent = data[languaje].frontend
